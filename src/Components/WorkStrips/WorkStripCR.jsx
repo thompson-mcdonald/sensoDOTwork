@@ -75,6 +75,6 @@ export default () => (
     <Description>
       I worked with Circadian Rhythms to build out their latest release; including a secret quantity of hidden downloadable tunes.
     </Description>
-    <WorkLink href="https://circadian-rhythms.com/cr003" target="_blank" alt="CR003" />
+    <WorkLink href="http://circadian-rhythms.com/cr003" target="_blank" alt="CR003" />
   </StripWrap>
 );
