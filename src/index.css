@@ -1,14 +1,64 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'P';
+  src: url('Fonts/P-Book.eot');
+  src: url('Fonts/P-Book.woff2') format('woff2'),
+       url('Fonts/P-Book.woff') format('woff'),
+       url('Fonts/P-Book.ttf') format('truetype'),
+       url('Fonts/P-Book.svg#PilatWide-Book') format('svg'),
+       url('Fonts/P-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: 'P';
+  src: url('Fonts/P-Bold.eot');
+  src: url('Fonts/P-Bold.woff2') format('woff2'),
+       url('Fonts/P-Bold.woff') format('woff'),
+       url('Fonts/P-Bold.ttf') format('truetype'),
+       url('Fonts/P-Bold.svg#PilatWide-Bold') format('svg'),
+       url('Fonts/P-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+body {
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: "P", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: "P", sans-serif;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-2 {
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px 20px;
+}
+
+
+@media screen and (min-width: 750px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
