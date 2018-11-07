@@ -9,15 +9,14 @@ const WorkLink = styled.a`
   &:link, &:visited {
     color: white;
     text-decoration: none;
-    border: 1px solid #111;
+    border: 1px solid #1D1E1F;
     border-top-color: white;
     transition: .4s all;
   }
   &:hover {
-    border-top-color: white;
-    border-bottom-color: white;
+    border-color: white;
     transition: .4s all;
-    background: #888;
+    background: #1D1E1F;
   }
 `;
 
