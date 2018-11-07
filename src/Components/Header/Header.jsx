@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
-import Wrapper from './../Wrapper/Wrapper';
-import Navigation from './../Navigation/Navigation';
 
 const Header = styled.header`
   width: 100%;
   padding: 2rem 0 3rem;
+  text-align: center;
   & a {
     opacity: 0.5;
     transition: all .5s;
@@ -36,24 +35,12 @@ const Logo = styled.a`
   }
 `;
 
-const Info = styled.a`
-  right: 0;
-  position: absolute;
-  text-transform: uppercase;
-  &:link, &:visited {
-    color: white;
-    text-decoration: none;
-  }
-`;
 
 
 export default () => (
   <div>
     <Header>
-      <Wrapper>
-        <Logo href="/">Senso.work</Logo>
-        <Info href="/info">Info</Info>
-      </Wrapper>
+      <Logo href="/">Senso.work</Logo>
     </Header>
   </div>
 );

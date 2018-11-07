@@ -1,46 +1,48 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
+import Iframe from 'react-iframe';
 import GabiImgOne from './../../Images/Gabi_one.png';
 import GabiImgTwo from './../../Images/Gabi_two.png';
-import GabiImgThree from './../../Images/Gabi_three.png';
 import Description from './../Description/Description';
 import Title from './../Title/Title';
 import SubTitle from './../SubTitle/SubTitle';
 import WorkLink from './../WorkLink/WorkLink';
 
 const WorkStrip = styled.div`
-  max-width: 800px;
-  width: 80%;
+  width: 100%;
   margin: 2rem auto;
   text-align: center;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(1, 1fr);
+  display: none;
   @media screen and (min-width: 750px) {
-    grid-template-columns: repeat(3, 1fr);
+    display: block;
   }
-  @media screen and (min-width: 900px) {
-    max-width: 1000px;
-  }
-
 `;
 
 const WorkImg = styled.img`
   max-width: 100%;
   margin-top: 2rem;
-  &:first-child {
-    display: none;
-  }
-  @media screen and (min-width: 750px) {
-    &:first-child {
-      display: inherit;
-    }
-  }
+`;
+
+const SiteFrame = styled(Iframe)`
+  max-width: 1000px;
+  height: 760px!important;
+  margin: 0 auto;
+  display: none;
 `;
 
 const StripWrap = styled.div`
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   text-align: center;
+  @media screen and (min-width: 750px) {
+    margin-bottom: 15rem;
+  }
+`;
+
+const WorkImgWrap = styled.div`
+  display: block;
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
 `;
 
 export default () => (
@@ -48,10 +50,15 @@ export default () => (
     <Title>Gabi's Reagent Compnion</Title>
     <SubTitle>Idea, Design, Development</SubTitle>
     <WorkStrip>
-          <WorkImg src={GabiImgThree} />
-          <WorkImg src={GabiImgOne} />
-          <WorkImg src={GabiImgTwo} />
+      <SiteFrame url="http://reagent.gabi.website/" position="static"  />
     </WorkStrip>
+    <WorkImgWrap>
+      <WorkImg src={GabiImgOne} />
+      <WorkImg src={GabiImgTwo} />
+    </WorkImgWrap>
+    <Description>
+      Gabi is a tool designed to assist recreational drug users test at home. This serves as an educational tool on Reagent Testing.
+    </Description>
     <WorkLink href="https://reagent.gabi.website/" target="_blank" alt="Gabi's Reagent Companion" />
   </StripWrap>
 );

@@ -1,7 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import BecalmedImgOne from './../../Images/Becalmed_one.png';
-import Description from './../Description/Description';
 import Title from './../Title/Title';
 import SubTitle from './../SubTitle/SubTitle';
 import WorkLink from './../WorkLink/WorkLink';
@@ -16,10 +15,13 @@ const WorkStrip = styled.div`
 const StripWrap = styled.div`
   margin-bottom: 15rem;
   text-align: center;
+  @media screen and (min-width:  750px) {
+    margin-bottom: 15rem;
+  }
 `;
 
 const WorkImg = styled.img`
-  max-width: 500px;
+  max-width: 100%;
   margin-top: 2rem;
 `;
 

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const WorkLink = styled.a`
@@ -23,6 +23,6 @@ const WorkLink = styled.a`
 
 export default ({ alt, target, href }) => (
   <div>
-    <WorkLink href={href} target={target} alt={alt}>VIEW</WorkLink>
+    <WorkLink href={href} target={target} alt={alt}>SEE PROJECT</WorkLink>
   </div>
 );

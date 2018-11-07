@@ -1,19 +1,17 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
+import Iframe from 'react-iframe';
 import CRImgOne from './../../Images/CR_one.png';
-import CRImgTwo from './../../Images/CR_two.png';
-import CRImgThree from './../../Images/CR_three.png';
 import Description from './../Description/Description';
 import WorkLink from './../WorkLink/WorkLink';
 
 
 const WorkStrip = styled.div`
   margin: 2rem auto;
-  width: 90%;
+  width: 100%;
+  display: none;
   @media screen and (min-width: 750px) {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    grid-gap: 10px;
+    display: block;
   }
 `;
 
@@ -35,16 +33,33 @@ const SubTitle = styled.h2`
 
 const WorkImg = styled.img`
   margin-top: 30px;
-  max-height: 310px;
   max-width: 100%;
-  @media screen and (min-width: 750px) {
-    max-height: 426px;
-  }
+  margin-bottom: 10px;
 `;
 
 const StripWrap = styled.div`
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
   text-align: center;
+  @media screen and (min-width:  750px) {
+    margin-bottom: 15rem;
+  }
+`;
+
+const SiteFrame = styled(Iframe)`
+  max-width: 1000px;
+  height: 760px!important;
+  margin: 0 auto;
+  display: none;
+  @media screen and (min-width: 750px) {
+    display: block;
+  }
+`;
+
+const WorkImgWrap = styled.div`
+  display: block;
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
 `;
 
 export default () => (
@@ -52,9 +67,11 @@ export default () => (
     <Title>CR003: Plata - 'Last Dayz'</Title>
     <SubTitle>Development, Additional Design</SubTitle>
     <WorkStrip>
-      <WorkImg src={CRImgOne} />
-      <WorkImg src={CRImgTwo} />
+      <SiteFrame url="http://circadian-rhythms.com/cr003" position="static" height="inherit" />
     </WorkStrip>
+    <WorkImgWrap>
+      <WorkImg src={CRImgOne} />
+    </WorkImgWrap>
     <Description>
       I worked with Circadian Rhythms to build out their latest release; including a secret quantity of hidden downloadable tunes.
     </Description>
