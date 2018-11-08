@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import Title from './../Components/Title/Title';
 import WorkStripCR from './../Components/WorkStrips/WorkStripCR';
 import WorkStripGabi from './../Components/WorkStrips/WorkStripGabi';
 import WorkStripMorsli from './../Components/WorkStrips/WorkStripMorsli';
 import WorkStripBecalmed from './../Components/WorkStrips/WorkStripBecalmed';
 
 const Container = styled.div`
-  max-width: 940px;
-  width: 90%;
-  margin: 0 auto;
+  max-width: 740px;
+  width: 70%;
+  margin: 0 0 0 3rem;
+  @media screen and (min-width: 750px) {
+    margin: 0 auto;
+  }
 `;
 
 const Blurb = styled.div`
@@ -17,19 +21,16 @@ const Blurb = styled.div`
   font-weight: lighter;
   letter-spacing: -0.025em;
   margin: 0 auto;
-  color: #eee;
   line-height: 1.5em;
+  letter-spacing: 0.01em;
   & a:link, a:visited {
     text-decoration: underline;
   }
   @media screen and (min-width: 750px) {
-    font-size: 14px;
-  }
-  & p {
-    font-family: 'space mono', monospace;
+    font-size: 16px;
   }
   & a:link, a:visited {
-    color: white;
+    color: #111;
     text-decoration: underline;
   }
   & a:hover {
@@ -39,13 +40,7 @@ const Blurb = styled.div`
 
 const Content = styled.div`
   width: 80%;
-  text-align: center;
-  margin: 0 auto;
-`;
-
-const Title = styled.h2`
-  text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 `;
 
 const WorkWrapper = styled.div`

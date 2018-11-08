@@ -5,18 +5,18 @@ const WorkLink = styled.a`
   text-align: center;
   display: inline-block;
   text-transform: uppercase;
-  padding: .5rem;
+  padding: .75rem 1rem;
   &:link, &:visited {
-    color: white;
+    color: #111;
     text-decoration: none;
-    border: 1px solid #1D1E1F;
-    border-top-color: white;
+    border: 1px solid #F5F5F5;
+    border-top-color: #111;
     transition: .4s all;
   }
   &:hover {
-    border-color: white;
+    border-color: #111;
     transition: .4s all;
-    background: #1D1E1F;
+    background: #efefef;
   }
 `;
 

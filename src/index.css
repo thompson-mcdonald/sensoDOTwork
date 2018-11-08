@@ -1,35 +1,59 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 
 @font-face {
-  font-family: 'P';
-  src: url('Fonts/P-Book.eot');
-  src: url('Fonts/P-Book.woff2') format('woff2'),
-       url('Fonts/P-Book.woff') format('woff'),
-       url('Fonts/P-Book.ttf') format('truetype'),
-       url('Fonts/P-Book.svg#PilatWide-Book') format('svg'),
-       url('Fonts/P-Book.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
+  font-family: 'TCondensed';
+  src: url('Fonts/TeXGyreHeros-Bold.eot');
+  src: url('Fonts/TeXGyreHeros-Bold.woff2') format('woff2'),
+       url('Fonts/TeXGyreHeros-Bold.woff') format('woff'),
+       url('Fonts/TeXGyreHeros-Bold.ttf') format('truetype'),
+       url('Fonts/TeXGyreHeros-Bold.svg#PilatWide-Book') format('svg'),
+       url('Fonts/TeXGyreHeros-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'P';
-  src: url('Fonts/P-Bold.eot');
-  src: url('Fonts/P-Bold.woff2') format('woff2'),
-       url('Fonts/P-Bold.woff') format('woff'),
-       url('Fonts/P-Bold.ttf') format('truetype'),
-       url('Fonts/P-Bold.svg#PilatWide-Bold') format('svg'),
-       url('Fonts/P-Bold.eot?#iefix') format('embedded-opentype');
+  font-family: 'TCondensed';
+  src: url('Fonts/TeXGyreHeros-BoldItalic.eot');
+  src: url('Fonts/TeXGyreHeros-BoldItalic.woff2') format('woff2'),
+       url('Fonts/TeXGyreHeros-BoldItalic.woff') format('woff'),
+       url('Fonts/TeXGyreHeros-BoldItalic.ttf') format('truetype'),
+       url('Fonts/TeXGyreHeros-BoldItalic.svg#PilatWide-Book') format('svg'),
+       url('Fonts/TeXGyreHeros-BoldItalic.eot?#iefix') format('embedded-opentype');
   font-weight: bold;
-  font-style: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TCondensed';
+  src: url('Fonts/TeXGyreHeros-Italic.eot');
+  src: url('Fonts/TeXGyreHeros-Italic.woff2') format('woff2'),
+       url('Fonts/TeXGyreHeros-Italic.woff') format('woff'),
+       url('Fonts/TeXGyreHeros-Italic.ttf') format('truetype'),
+       url('Fonts/TeXGyreHeros-Italic.svg#PilatWide-Book') format('svg'),
+       url('Fonts/TeXGyreHeros-Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TCondensed';
+  src: url('Fonts/TeXGyreHeros-Regular.eot');
+  src: url('Fonts/TeXGyreHeros-Regular.woff2') format('woff2'),
+       url('Fonts/TeXGyreHeros-Regular.woff') format('woff'),
+       url('Fonts/TeXGyreHeros-Regular.ttf') format('truetype'),
+       url('Fonts/TeXGyreHeros-Regular.svg#PilatWide-Book') format('svg'),
+       url('Fonts/TeXGyreHeros-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  background: #1D1E1F;
-  color: #fff;
+  background: #FFFFFF;
+  color: #111;
   margin: 0;
   padding: 0;
-  font-family: "P", sans-serif;
+  font-family: "TCondensed", sans-serif;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
