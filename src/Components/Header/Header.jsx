@@ -10,7 +10,7 @@ const Header = styled.header`
     padding: 2rem 0;
   }
   & a {
-    opacity: 0.5;
+    opacity: 0.3;
     transition: all .5s;
     user-select: none;
   }
@@ -32,10 +32,10 @@ const Logo = styled.a`
     text-decoration: none;
   }
   @media screen and (min-width: 375px) {
-    font-size: 16px;
+    font-size: 20px;
   }
   @media screen and (min-width: 750px) {
-    font-size: 18px;
+    font-size: 24px;
   }
 `;
 

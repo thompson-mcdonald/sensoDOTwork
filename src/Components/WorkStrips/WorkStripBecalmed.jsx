@@ -5,11 +5,12 @@ import Title from './../Title/Title';
 import SubTitle from './../SubTitle/SubTitle';
 import Description from './../Description/Description';
 import WorkLink from './../WorkLink/WorkLink';
+import WorkImage from './../WorkImage/WorkImage';
 
 const WorkStrip = styled.div`
   max-width: 800px;
   width: 80%;
-  margin: 2rem 0;
+  margin: 0;
 `;
 
 const StripWrap = styled.div`
@@ -19,22 +20,16 @@ const StripWrap = styled.div`
   }
 `;
 
-const WorkImg = styled.img`
-  max-width: 100%;
-  margin-top: 2rem;
-`;
-
-
 export default () => (
   <StripWrap>
     <Title>Becalmed - Oblique Strategies for your terminal</Title>
     <SubTitle>Idea, Development</SubTitle>
     <WorkStrip>
-          <WorkImg src={BecalmedImgOne} />
+          <WorkImage src={BecalmedImgOne} />
     </WorkStrip>
     <Description>
       <p>Brian Eno's Oblique Strategies, but in your terminal.<br />The creative problem solver you didn't know you needed. </p>
     </Description>
-    <WorkLink href="http://npmjs.com/package/becalmed" target="_blank" alt="CR003" />
+    <WorkLink href="http://npmjs.com/package/becalmed" target="_blank" alt="CR003" text="SEE PROJECT" />
   </StripWrap>
 );

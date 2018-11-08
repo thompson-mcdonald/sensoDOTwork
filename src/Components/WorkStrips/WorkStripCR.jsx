@@ -5,17 +5,11 @@ import Description from './../Description/Description';
 import WorkLink from './../WorkLink/WorkLink';
 import Title from './../Title/Title';
 import SubTitle from './../SubTitle/SubTitle';
-
+import WorkImg from './../WorkImage/WorkImage';
 
 const WorkStrip = styled.div`
   margin: 2rem auto;
   width: 100%;
-`;
-
-const WorkImg = styled.img`
-  margin-top: 30px;
-  max-width: 100%;
-  margin-bottom: 10px;
 `;
 
 const StripWrap = styled.div`
@@ -39,6 +33,6 @@ export default () => (
     <Description>
       I worked with Circadian Rhythms to build out their latest release; including a secret quantity of hidden downloadable tunes.
     </Description>
-    <WorkLink href="http://circadian-rhythms.com/cr003" target="_blank" alt="CR003" />
+    <WorkLink href="http://circadian-rhythms.com/cr003" target="_blank" alt="CR003" text="SEE PROJECT" />
   </StripWrap>
 );

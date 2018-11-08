@@ -5,6 +5,7 @@ import Description from './../Description/Description';
 import Title from './../Title/Title';
 import SubTitle from './../SubTitle/SubTitle';
 import WorkLink from './../WorkLink/WorkLink';
+import WorkImage from './../WorkImage/WorkImage';
 
 const WorkStrip = styled.div`
   width: 100%;
@@ -18,11 +19,6 @@ const StripWrap = styled.div`
   }
 `;
 
-const WorkImg = styled.img`
-  max-width: 100%;
-  margin-top: 2rem;
-`;
-
 const WorkImgWrap = styled.div`
 
 `;
@@ -32,11 +28,11 @@ export default () => (
     <Title>Tom Morsli Portfolio</Title>
     <SubTitle>Development</SubTitle>
     <WorkImgWrap>
-      <WorkImg src={MorsliImgOne} />
+      <WorkImage src={MorsliImgOne} />
     </WorkImgWrap>
     <Description>
       <p>Tom is a really good friend and a really good photographer and editor. <br /> I helped with his site.</p>
     </Description>
-    <WorkLink href="http://tmorsli.com" target="_blank" alt="Tom Morsli" />
+    <WorkLink href="http://tmorsli.com" target="_blank" alt="Tom Morsli" text="SEE PROJECT" />
   </StripWrap>
 );

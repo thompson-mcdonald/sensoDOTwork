@@ -6,16 +6,11 @@ import Description from './../Description/Description';
 import Title from './../Title/Title';
 import SubTitle from './../SubTitle/SubTitle';
 import WorkLink from './../WorkLink/WorkLink';
+import WorkImage from './../WorkImage/WorkImage';
 
 const WorkStrip = styled.div`
   width: 100%;
-  margin: 2rem auto;
-`;
-
-const WorkImg = styled.img`
-  max-width: 100%;
-  margin-top: 2rem;
-  width: 80%;
+  margin: 0 auto;
 `;
 
 const StripWrap = styled.div`
@@ -29,7 +24,6 @@ const WorkImgWrap = styled.div`
   display: grid;
   grid-gap: 10px 20px;
   grid-template-columns: repeat(1, 1fr);
-  margin-bottom: 4rem;
   @media screen and (min-width: 750px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -37,15 +31,16 @@ const WorkImgWrap = styled.div`
 
 export default () => (
   <StripWrap>
-    <Title>Gabi's Reagent Compnion</Title>
+    <Title>Gabi's Reagent Companion</Title>
     <SubTitle>Idea, Design, Development</SubTitle>
     <WorkImgWrap>
-      <WorkImg src={GabiImgOne} />
-      <WorkImg src={GabiImgTwo} />
+      <WorkImage src={GabiImgOne} />
+      <WorkImage src={GabiImgTwo} />
     </WorkImgWrap>
     <Description>
       Gabi is a tool designed to assist recreational drug users test at home. This serves as an educational tool on Reagent Testing.
     </Description>
-    <WorkLink href="https://reagent.gabi.website/" target="_blank" alt="Gabi's Reagent Companion" />
+    <WorkLink href="https://reagent.gabi.website/" target="_blank" alt="Gabi's Reagent Companion" text="SEE PROJECT" />
+    <WorkLink href="https://medium.com/@SafeGabi/introducing-gabis-reagent-companion-2be6e253facc" target="_blank" text="READ MORE" alt="Gabi's Reagent Companion" />
   </StripWrap>
 );
