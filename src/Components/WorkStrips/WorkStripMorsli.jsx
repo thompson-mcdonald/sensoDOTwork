@@ -7,11 +7,6 @@ import SubTitle from './../SubTitle/SubTitle';
 import WorkLink from './../WorkLink/WorkLink';
 import WorkImage from './../WorkImage/WorkImage';
 
-const WorkStrip = styled.div`
-  width: 100%;
-  margin: 2rem auto;
-`;
-
 const StripWrap = styled.div`
   margin-bottom: 5rem;
   @media screen and (min-width:  750px) {
