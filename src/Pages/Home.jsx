@@ -23,8 +23,8 @@ const Blurb = styled.div`
     line-height: 1.4;
   }
   & a:link, a:visited {
-    color: #fff;
-    border-bottom: 1px solid green;
+    color: #FFF9F9;
+    border-bottom: 1px solid #FFF9F9;
     text-decoration: none;
   }
   & a:hover {
@@ -67,17 +67,7 @@ export default () => (
       <Content>
         <Bigger>I'm a Designer + Front End Developer with 6 years total experience. My last full-time position was Visual Lead at <a href="https://userelease.com/">Release Platform</a>. Since then I've been working with <a href="https://circadian-rhythms.com/">Circadian Rhythms</a> on their latest releases and new website.</Bigger>
 
-        <p>I'm on the lookout for remote freelance work and full-time work in Bristol. I’ve worked on a wide breadth of projects, from startup branding to designing that page with the bin-collection schedule on.</p>
-
-        <p>I have extensive experience with:</p>
-
-        <p>-	HTML & CSS<br />
-        -	Gulp, Grunt<br />
-        -	Sass, Postcss, Tachyons<br />
-        -	React, Rails, Jekyll, Netlify<br />
-        -	NPM, Yarn, Git, styled-components<br />
-        - Sketch, Photoshop, Figma<br />
-        - Wireframing + UX Design</p>
+        
         <p>Recent Work</p>
         <RecentWork>
           <p>
@@ -88,7 +78,6 @@ export default () => (
             <a href="https://highland.gov.uk">https://highland.gov.uk</a> - Design + Development<br />
           </p>
         </RecentWork>
-        <hr />
         <Navigate>
           <p>jthompsonmcdonald [at] gmail [dot] com
           <br />
