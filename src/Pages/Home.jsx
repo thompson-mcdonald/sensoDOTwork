@@ -65,7 +65,7 @@ export default () => (
   <Container>
     <Blurb>
       <Content>
-        <Bigger>I'm a Designer + Front End Developer with 6 years total experience. My last full-time position was Visual Lead at <a href="https://userelease.com/">Release Platform</a>. Since then I've been working with <a href="https://circadian-rhythms.com/">Circadian Rhythms</a> on their latest releases and new website.</Bigger>
+        <Bigger>I'm a Designer + Front End Developer with 6 years total experience. My last full-time position was Visual Lead at <a href="https://userelease.com/">Release Platform</a>. Since then I've been contracting, and working with <a href="https://circadian-rhythms.com/">Circadian Rhythms</a> on their latest releases and new website.</Bigger>
 
         
         <p>Recent Work</p>
