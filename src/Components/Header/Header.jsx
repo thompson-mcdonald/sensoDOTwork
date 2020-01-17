@@ -4,12 +4,12 @@ import LogoImg from './../../Images/logo.svg';
 
 const Header = styled.header`
   width: 80%;
-  max-width: 550px;
   margin-left: 2rem;
-  padding: 5rem 0 0;
+  padding: 3rem 0;
   @media screen and (min-width: 750px) {
-    padding: 5rem 0 4rem;
+    padding: 3rem 0;
     margin-left: 5rem;
+    max-width: 60vw;
   }
   & a {
     opacity: 0.3;
